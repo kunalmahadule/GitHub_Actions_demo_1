@@ -13,6 +13,8 @@ on:
 jobs:
 
     test:
+      # Adding the commment to push code on github 
+      # below mention where the jobs runs on self-hosted runners or github runners
         runs-on: ubuntu-latest
         # runs-on: windows-latest
         # runs-on: self-hosted
