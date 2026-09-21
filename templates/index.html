@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Temperature</title>
+</head>
+
+<body>
+
+    <h1>Current Temperature</h1>
+
+    <form method="POST">
+
+        <label>Enter City:</label>
+
+        <input
+            type="text"
+            name="city"
+            placeholder="e.g. Mumbai"
+            required
+        >
+
+        <button type="submit">
+            Get Temperature
+        </button>
+
+    </form>
+
+
+    {% if temperature is not none %}
+
+        <h2>
+            {{ city }}: {{ temperature }} °C
+        </h2>
+
+    {% endif %}
+
+
+    {% if error %}
+
+        <p>{{ error }}</p>
+
+    {% endif %}
+
+</body>
+</html> 
