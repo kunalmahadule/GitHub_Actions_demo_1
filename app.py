@@ -80,7 +80,7 @@ def get_weather(latitude, longitude):
     except requests.RequestException:
         return None
 
-
+# this is the home url of the app
 @app.route("/", methods=["GET", "POST"])
 def home():
 
